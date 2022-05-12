@@ -1,0 +1,8 @@
+<%= form_for(@short_url, remote: true) do |f| %>
+    <% if @short_url.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@short_url.errors.count, "error") %> prohibited this url from being saved:</h2>
+    <div class="actions">
+      <%= f.submit 'Shorten Me', :class => "btn btn-primary"%>
+    </div>
+<% end %>

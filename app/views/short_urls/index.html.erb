@@ -1,0 +1,9 @@
+<h1>Short Url</h1>
+
+<ul>
+  <% @short_urls.each do |short_urls| %>
+    <li>
+        <%= link_to short_urls.full_url, short_urls %>
+    </li>
+  <% end %>
+</ul>

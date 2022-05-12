@@ -1,0 +1,17 @@
+<h1>Short Url</h1>
+
+<%= form_with model: @short_urls do |form| %>
+  <div>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :Url %><br>
+    <%= form.text_area :full_url %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
